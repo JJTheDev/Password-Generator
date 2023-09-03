@@ -1,6 +1,5 @@
 //Password Generator
 
-console.log("hi");
 
 // Step 1: Clicking the button generates new password.
 
@@ -15,3 +14,23 @@ console.log("hi");
 //Step 6: Once all prompts are answered then a password should be generated.
 
 //step 7: password should be displayed in alert or written on web page 
+
+
+
+// Assignment code here
+
+
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
