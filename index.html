@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-</head>
-<body>
-
-    <main class="generator">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
         <h1>Password Generator</h1>
-    <div id="shadow-box"> <!--This Div is for the shadow of the outline box-->
-        <h2>Generate a Password</h2>
-        <hr> <!--This will create the horizontal line on the webpage-->
-    <div id="pass-box"> <!--This will be the box that generates the password-->
-        <p >Your Secure Password</p>
-
-        
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
     </div>
-        <hr>
-        <button>Generate Password</button>
-    </div>
-        
-    </main>
-
-    
-</body>
-<script src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
