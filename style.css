@@ -1,0 +1,60 @@
+
+
+body, .generator{
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    margin: 4%;
+}
+/* This will design the dashed border where the password will be generated  */
+#pass-box, #pass-box::after, #pass-box::before {
+    border-style: dashed;
+    opacity: 0.5;
+    width: 1rem;
+    height: 20%;
+    padding: 6%;
+    padding-right: 80%;
+    overflow: hidden;
+    margin: 5%;
+    box-shadow: 5px;
+
+}
+
+#pass-box p {
+   display: inline;
+   margin: 10%;
+   height: 20%;
+   text-align: center;
+   justify-content: space-evenly;
+   align-items: center;
+
+}
+
+button {
+    font-size: x-large;
+    background-color: maroon;
+    color: white;
+    width: 35%;
+    border-radius: 25px;
+    margin: 5%;
+}
+button:hover {
+    opacity: 0.5;
+    color: 
+    
+}
+
+#shadow-box {
+    border: outset;
+    box-shadow: 5px 5px 5px grey;
+    padding: 5%;
+    margin: 2%;
+    padding-top: 5%;
+}
+
+hr {
+  opacity: 0.5;
+  margin: 3%;
+}
