@@ -19,14 +19,42 @@
 
 // Assignment code here
 
+var passwordText; 
+
+function generatePassword() {
+
+    while (true) {
+        passwordLength = prompt("Please enter desire password length between (8 and 128 characters");
+        if (passwordLength === null){
+            alert("Password generation canceled");
+            break; //Exits the loop
+        }
+
+        passwordLength = parseInt(passwordLength);
+        // Checks to see if number is valid within the specified range
+        //  the (!) means if the statement condition is false it will run
+        if (!isNaN(passwordLength) && passwordLength >= 8 && passwordLength <= 128 ){
+            break; // Exit the loop if the input is valid
+        }else {
+            alert("Invalid input. Please enter a valid number between 8 and 128");
+        }
+
+        if (passwordLength !== null) {
+            alert("Chose a password length of" + passwordLength + "characters.")
+        }
+        
+    }
+   
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+var generatePassword
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
